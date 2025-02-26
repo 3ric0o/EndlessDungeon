@@ -2,13 +2,11 @@
 #include "raylib.h"
 #include <vector>
 
-// Define cell types for the map
 enum class CellType {
     WALL = 0,
     FLOOR = 1
 };
 
-// Structure to represent a room in the dungeon
 struct Room {
     int x;
     int y;
@@ -28,17 +26,17 @@ public:
     void draw_minimap(const Vector2& playerPosition);
     bool check_collision(const Vector2& position, float radius);
 
-    Vector3 get_spawn_position() const {
-        if (rooms.empty()) {
-            return position;  // Fallback position
-        }
+    Vector3 get_spawn_position() const
+    {
+        if (rooms.empty()) { return position; }
     
         const Room& firstRoom = rooms.front();
         // Calculate center of the first room in map coordinates
         float centerX = firstRoom.x + (firstRoom.width / 2.0f);
         float centerY = firstRoom.y + (firstRoom.height / 2.0f);
     
-        return Vector3{
+        return Vector3
+        {
             position.x + centerX,  // Map position offset + room center X
             0.4f,                 // Fixed height
             position.z + centerY  // Map position offset + room center Y

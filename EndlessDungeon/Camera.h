@@ -13,7 +13,7 @@ public:
 private:
     void update_camera_angle();
     void update_camera_normalized();
-    Vector3 get_spawn_position();  // New method
+    Vector3 get_spawn_position(); 
 
     static constexpr float MOVE_SPEED = 0.1f;
     Camera camera;

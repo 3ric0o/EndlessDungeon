@@ -18,11 +18,7 @@ void CameraController::initialize()
     
     camera.position = spawnPos;
     // Set initial target slightly ahead of spawn position
-    camera.target = Vector3{ 
-        spawnPos.x + 0.1f, 
-        spawnPos.y, 
-        spawnPos.z
-    };
+    camera.target = Vector3{ spawnPos.x + 0.1f, spawnPos.y, spawnPos.z };
     camera.up = Vector3{ 0.0f, 1.0f, 0.0f };
     camera.fovy = 45.0f;
     camera.projection = CAMERA_PERSPECTIVE;

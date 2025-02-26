@@ -1,7 +1,7 @@
 #include "Game.h"
 
-Game::Game(int width, int height) 
-    : cameraController(map), screenWidth(width), screenHeight(height) {
+Game::Game(int width, int height) : cameraController(map), screenWidth(width), screenHeight(height)
+{
     InitWindow(screenWidth, screenHeight, "Endless Dungeon");
     DisableCursor();
     SetTargetFPS(60);
@@ -37,11 +37,7 @@ void Game::Draw()
     map.draw();
     EndMode3D();
     
-    // Fix the Vector2 initialization syntax
-    Vector2 playerPos = { 
-        cameraController.GetCamera().position.x,
-        cameraController.GetCamera().position.z 
-    };
+    Vector2 playerPos = { cameraController.GetCamera().position.x,cameraController.GetCamera().position.z };
     map.draw_minimap(playerPos);
     
     EndDrawing();

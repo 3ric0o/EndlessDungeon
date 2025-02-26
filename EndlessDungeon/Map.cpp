@@ -21,7 +21,8 @@ void Map::generate()
     int attempts = 0;
     const int MAX_ATTEMPTS = 100;  // Prevent infinite loops
     
-    do {
+    do
+        {
         initializeMap();
         
         // Generate rooms
@@ -66,7 +67,8 @@ void Map::generate()
         }
         
         attempts++;
-    } while (rooms.size() < 4 && attempts < MAX_ATTEMPTS);  // Ensure at least 4 rooms
+    }
+    while (rooms.size() < 4 && attempts < MAX_ATTEMPTS);  // Ensure at least 4 rooms
 
     if (rooms.size() < 4)
         {
@@ -80,10 +82,13 @@ void Map::generate()
     visibilityMap.resize(MAP_HEIGHT, std::vector<bool>(MAP_WIDTH, false));
     
     // Make the spawn room visible initially
-    if (!rooms.empty()) {
+    if (!rooms.empty())
+        {
         const Room& firstRoom = rooms.front();
-        for (int y = firstRoom.y; y < firstRoom.y + firstRoom.height; y++) {
-            for (int x = firstRoom.x; x < firstRoom.x + firstRoom.width; x++) {
+        for (int y = firstRoom.y; y < firstRoom.y + firstRoom.height; y++)
+            {
+            for (int x = firstRoom.x; x < firstRoom.x + firstRoom.width; x++)
+                {
                 visibilityMap[y][x] = true;
             }
         }
@@ -200,35 +205,42 @@ void Map::updateVisibility(const Vector2& playerPos)
     int playerCellY = static_cast<int>(playerPos.y - position.z + 0.5f);
     
     // Update visibility around player
-    for (int y = -VISIBILITY_RADIUS; y <= VISIBILITY_RADIUS; y++) {
-        for (int x = -VISIBILITY_RADIUS; x <= VISIBILITY_RADIUS; x++) {
+    for (int y = -VISIBILITY_RADIUS; y <= VISIBILITY_RADIUS; y++)
+    {
+        for (int x = -VISIBILITY_RADIUS; x <= VISIBILITY_RADIUS; x++)
+        {
             int checkX = playerCellX + x;
             int checkY = playerCellY + y;
             
             // Check if within map bounds
             if (checkX >= 0 && checkX < MAP_WIDTH && 
-                checkY >= 0 && checkY < MAP_HEIGHT) {
+                checkY >= 0 && checkY < MAP_HEIGHT)
+            {
                 
                 // Check if within visibility radius
                 float distance = sqrtf(x*x + y*y);
-                if (distance <= VISIBILITY_RADIUS) {
+                if (distance <= VISIBILITY_RADIUS)
+                {
                     // Simple line of sight check
                     bool hasLineOfSight = true;
                     float dx = static_cast<float>(x);
                     float dy = static_cast<float>(y);
                     float steps = distance * 2;
                     
-                    for (float i = 0; i < steps; i++) {
+                    for (float i = 0; i < steps; i++)
+                    {
                         int checkStepX = playerCellX + static_cast<int>(dx * (i / steps));
                         int checkStepY = playerCellY + static_cast<int>(dy * (i / steps));
                         
-                        if (mapData[checkStepY][checkStepX] == CellType::WALL) {
+                        if (mapData[checkStepY][checkStepX] == CellType::WALL)
+                        {
                             hasLineOfSight = false;
                             break;
                         }
                     }
                     
-                    if (hasLineOfSight) {
+                    if (hasLineOfSight)
+                    {
                         visibilityMap[checkY][checkX] = true;
                     }
                 }
@@ -240,18 +252,18 @@ void Map::updateVisibility(const Vector2& playerPos)
 void Map::draw_minimap(const Vector2& playerPosition)
 {
     const int MINIMAP_SCALE = 4;
-    Vector2 minimapPos = { 
-        static_cast<float>(GetScreenWidth() - MAP_WIDTH * MINIMAP_SCALE - 20), 
-        20.0f 
-    };
+    Vector2 minimapPos = { static_cast<float>(GetScreenWidth() - MAP_WIDTH * MINIMAP_SCALE - 20), 20.0f };
     
     // Update visibility before drawing
     updateVisibility(playerPosition);
     
     // Draw the minimap background
-    for (int y = 0; y < MAP_HEIGHT; y++) {
-        for (int x = 0; x < MAP_WIDTH; x++) {
-            if (visibilityMap[y][x]) {
+    for (int y = 0; y < MAP_HEIGHT; y++)
+    {
+        for (int x = 0; x < MAP_WIDTH; x++)
+        {
+            if (visibilityMap[y][x])
+            {
                 Color cellColor = (mapData[y][x] == CellType::WALL) ? WHITE : BLACK;
                 DrawRectangle(
                     static_cast<int>(minimapPos.x + x * MINIMAP_SCALE),
@@ -261,7 +273,8 @@ void Map::draw_minimap(const Vector2& playerPosition)
                     cellColor
                 );
             }
-            else {
+            else
+            {
                 // Draw fog of war
                 DrawRectangle(
                     static_cast<int>(minimapPos.x + x * MINIMAP_SCALE),
