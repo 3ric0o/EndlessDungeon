@@ -25,6 +25,12 @@ void Game::Run()
 
 void Game::Update()
 {
+    if (IsKeyPressed(KEY_R))
+    {
+        map.generate();
+        cameraController.initialize();
+    }
+    
     cameraController.update();
 }
 

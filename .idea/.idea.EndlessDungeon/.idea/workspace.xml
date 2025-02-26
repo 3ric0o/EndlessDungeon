@@ -7,7 +7,16 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="2d7b92b4-4149-4990-8d40-0f778ff7d9e2" name="Changes" comment="" />
+    <list default="true" id="2d7b92b4-4149-4990-8d40-0f778ff7d9e2" name="Changes" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/.idea.EndlessDungeon/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.EndlessDungeon/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/EndlessDungeon/Game.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/EndlessDungeon/Game.cpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/EndlessDungeon/Map.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/EndlessDungeon/Map.cpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/EndlessDungeon/Map.h" beforeDir="false" afterPath="$PROJECT_DIR$/EndlessDungeon/Map.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/EndlessDungeon/x64/Debug/EndlessDungeon.ilk" beforeDir="false" afterPath="$PROJECT_DIR$/EndlessDungeon/x64/Debug/EndlessDungeon.ilk" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/EndlessDungeon/x64/Debug/vc143.idb" beforeDir="false" afterPath="$PROJECT_DIR$/EndlessDungeon/x64/Debug/vc143.idb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/EndlessDungeon/x64/Debug/vc143.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/EndlessDungeon/x64/Debug/vc143.pdb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/x64/Debug/EndlessDungeon.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/x64/Debug/EndlessDungeon.pdb" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -16,6 +25,9 @@
   <component name="DpaMonitoringSettings">
     <option name="firstShow" value="false" />
   </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
   <component name="ProblemsViewState">
     <option name="selectedTabId" value="QODANA_PROBLEMS_VIEW_TAB" />
   </component>
@@ -23,24 +35,28 @@
   &quot;associatedIndex&quot;: 7
 }</component>
   <component name="ProjectId" id="2tAFDAjKwR2Muz4FXeFmT8siJ1J" />
+  <component name="ProjectLevelVcsManager">
+    <ConfirmationsSetting value="2" id="Add" />
+  </component>
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;C/C++ Project.EndlessDungeon.executor&quot;: &quot;Run&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;ignore.virus.scanning.warn.message&quot;: &quot;true&quot;,
-    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
-    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
-    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
-    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
-    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
-    &quot;settings.editor.selected.configurable&quot;: &quot;com.github.copilot.settings.ApplicationConfigurable&quot;,
-    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "C/C++ Project.EndlessDungeon.executor": "Run",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "git-widget-placeholder": "main",
+    "ignore.virus.scanning.warn.message": "true",
+    "node.js.detected.package.eslint": "true",
+    "node.js.detected.package.tslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.tslint": "(autodetect)",
+    "nodejs_package_manager_path": "npm",
+    "settings.editor.selected.configurable": "com.github.copilot.settings.ApplicationConfigurable",
+    "vue.rearranger.settings.migration": "true"
   }
-}</component>
+}]]></component>
   <component name="RunManager">
     <configuration name="EndlessDungeon" type="CppProject" factoryName="C++ Project">
       <configuration_1 setup="1">

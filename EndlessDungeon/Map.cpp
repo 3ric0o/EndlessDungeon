@@ -79,7 +79,7 @@ void Map::generate()
     generateMesh();
     
     // Initialize visibility map
-    visibilityMap.resize(MAP_HEIGHT, std::vector<bool>(MAP_WIDTH, false));
+    visibilityMap = std::vector<std::vector<bool>>(MAP_HEIGHT, std::vector<bool>(MAP_WIDTH, false));
     
     // Make the spawn room visible initially
     if (!rooms.empty())
