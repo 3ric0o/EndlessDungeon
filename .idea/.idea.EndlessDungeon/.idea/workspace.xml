@@ -8,11 +8,22 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="2d7b92b4-4149-4990-8d40-0f778ff7d9e2" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/EndlessDungeon/Weapon.cpp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/EndlessDungeon/Weapon.h" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/.idea.EndlessDungeon/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.EndlessDungeon/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/EndlessDungeon/EndlessDungeon.vcxproj" beforeDir="false" afterPath="$PROJECT_DIR$/EndlessDungeon/EndlessDungeon.vcxproj" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/EndlessDungeon/Game.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/EndlessDungeon/Game.cpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/EndlessDungeon/Game.h" beforeDir="false" afterPath="$PROJECT_DIR$/EndlessDungeon/Game.h" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/EndlessDungeon/Map.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/EndlessDungeon/Map.cpp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/EndlessDungeon/Map.h" beforeDir="false" afterPath="$PROJECT_DIR$/EndlessDungeon/Map.h" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/EndlessDungeon/x64/Debug/EndlessDungeon.ilk" beforeDir="false" afterPath="$PROJECT_DIR$/EndlessDungeon/x64/Debug/EndlessDungeon.ilk" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/EndlessDungeon/x64/Debug/EndlessDungeon.tlog/CL.command.1.tlog" beforeDir="false" afterPath="$PROJECT_DIR$/EndlessDungeon/x64/Debug/EndlessDungeon.tlog/CL.command.1.tlog" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/EndlessDungeon/x64/Debug/EndlessDungeon.tlog/CL.read.1.tlog" beforeDir="false" afterPath="$PROJECT_DIR$/EndlessDungeon/x64/Debug/EndlessDungeon.tlog/CL.read.1.tlog" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/EndlessDungeon/x64/Debug/EndlessDungeon.tlog/CL.write.1.tlog" beforeDir="false" afterPath="$PROJECT_DIR$/EndlessDungeon/x64/Debug/EndlessDungeon.tlog/CL.write.1.tlog" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/EndlessDungeon/x64/Debug/EndlessDungeon.tlog/Cl.items.tlog" beforeDir="false" afterPath="$PROJECT_DIR$/EndlessDungeon/x64/Debug/EndlessDungeon.tlog/Cl.items.tlog" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/EndlessDungeon/x64/Debug/EndlessDungeon.tlog/link.command.1.tlog" beforeDir="false" afterPath="$PROJECT_DIR$/EndlessDungeon/x64/Debug/EndlessDungeon.tlog/link.command.1.tlog" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/EndlessDungeon/x64/Debug/EndlessDungeon.tlog/link.read.1.tlog" beforeDir="false" afterPath="$PROJECT_DIR$/EndlessDungeon/x64/Debug/EndlessDungeon.tlog/link.read.1.tlog" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/EndlessDungeon/x64/Debug/EndlessDungeon.tlog/link.secondary.1.tlog" beforeDir="false" afterPath="$PROJECT_DIR$/EndlessDungeon/x64/Debug/EndlessDungeon.tlog/link.secondary.1.tlog" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/EndlessDungeon/x64/Debug/EndlessDungeon.tlog/link.write.1.tlog" beforeDir="false" afterPath="$PROJECT_DIR$/EndlessDungeon/x64/Debug/EndlessDungeon.tlog/link.write.1.tlog" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/EndlessDungeon/x64/Debug/vc143.idb" beforeDir="false" afterPath="$PROJECT_DIR$/EndlessDungeon/x64/Debug/vc143.idb" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/EndlessDungeon/x64/Debug/vc143.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/EndlessDungeon/x64/Debug/vc143.pdb" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/x64/Debug/EndlessDungeon.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/x64/Debug/EndlessDungeon.pdb" afterDir="false" />

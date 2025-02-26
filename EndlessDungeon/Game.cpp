@@ -11,6 +11,7 @@ void Game::Initialize()
 {
     map.generate();
     cameraController.initialize();
+    weapon.Initialize();
 }
 
 void Game::Run()
@@ -25,13 +26,14 @@ void Game::Run()
 
 void Game::Update()
 {
-    if (IsKeyPressed(KEY_R))
+    if (IsKeyPressed(KEY_SPACE))
     {
         map.generate();
         cameraController.initialize();
     }
     
     cameraController.update();
+    weapon.Update();
 }
 
 void Game::Draw()
@@ -42,6 +44,8 @@ void Game::Draw()
     BeginMode3D(cameraController.GetCamera());
     map.draw();
     EndMode3D();
+
+    weapon.Draw();
     
     Vector2 playerPos = { cameraController.GetCamera().position.x,cameraController.GetCamera().position.z };
     map.draw_minimap(playerPos);

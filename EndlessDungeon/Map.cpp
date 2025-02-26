@@ -68,9 +68,9 @@ void Map::generate()
         
         attempts++;
     }
-    while (rooms.size() < 4 && attempts < MAX_ATTEMPTS);  // Ensure at least 4 rooms
+    while (rooms.size() < 6 && attempts < MAX_ATTEMPTS);  // Ensure at least 4 rooms
 
-    if (rooms.size() < 4)
+    if (rooms.size() < 6)
         {
         initializeMap();
         }
@@ -169,7 +169,7 @@ void Map::generateMesh()
     model = LoadModelFromMesh(mesh);
 
     // Load or create the texture for the walls
-    texture = LoadTexture("resources/cubicmap_atlas.png");  // Keep your original texture
+    texture = LoadTexture("resources/cubicmap_atlas.png"); 
     model.materials[0].maps[MATERIAL_MAP_DIFFUSE].texture = texture;
 
     // Clean up
